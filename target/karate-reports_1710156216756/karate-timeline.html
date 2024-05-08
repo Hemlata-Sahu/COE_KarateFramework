@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/putrequest\/UpdateUserEntry[1:7]","start":1710155482582,"end":1710155485879,"title":"com\/api\/automation\/putrequest\/UpdateUserEntry[1:7] 16:41:22.582-16:41:25.879 To update the User Entry for exiting users in JSON format"},{"id":2,"group":1,"content":"com\/api\/automation\/putrequest\/UpdateUserEntry[2:34]","start":1710155485896,"end":1710155488182,"title":"com\/api\/automation\/putrequest\/UpdateUserEntry[2:34] 16:41:25.896-16:41:28.182 To update the Job Entry for non-exiting job in JSON format - It should be fail(Negative Scanario)","className":"failed"},{"id":3,"group":1,"content":"com\/api\/automation\/putrequest\/UpdateUserEntry[3:58]","start":1710155488208,"end":1710155490428,"title":"com\/api\/automation\/putrequest\/UpdateUserEntry[3:58] 16:41:28.208-16:41:30.428 To update the Job Entry for exiting job in JSON format by calling another feature file"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

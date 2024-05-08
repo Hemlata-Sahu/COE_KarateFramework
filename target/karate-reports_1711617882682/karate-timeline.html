@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/deleterequest\/deleteUser[1:9]","start":1711616758706,"end":1711616760913,"title":"com\/api\/automation\/deleterequest\/deleteUser[1:9] 14:35:58.706-14:36:00.913 To delete the job entry from application using job id"},{"id":2,"group":2,"content":"com\/api\/automation\/deleterequest\/deleteUser[2:29]","start":1711616758706,"end":1711616760793,"title":"com\/api\/automation\/deleterequest\/deleteUser[2:29] 14:35:58.706-14:36:00.793 To delete the job entry from application using job id and delete the job entry twice  --- It should fail","className":"failed"},{"id":3,"group":3,"content":"com\/api\/automation\/deleterequest\/deleteUser[3:48]","start":1711616758706,"end":1711616760355,"title":"com\/api\/automation\/deleterequest\/deleteUser[3:48] 14:35:58.706-14:36:00.355 To demo request chaining"},{"id":4,"group":4,"content":"com\/api\/automation\/getrequest\/getRequest[2:32]","start":1711616758706,"end":1711616759645,"title":"com\/api\/automation\/getrequest\/getRequest[2:32] 14:35:58.706-14:35:59.645 To get all the data from the application in JSON format using path variable"},{"id":5,"group":5,"content":"com\/api\/automation\/getrequest\/responseMatcher[1:10]","start":1711616758706,"end":1711616759904,"title":"com\/api\/automation\/getrequest\/responseMatcher[1:10] 14:35:58.706-14:35:59.904 To get all the data from the application in JSON format using match equals variable"},{"id":6,"group":4,"content":"com\/api\/automation\/getrequest\/responseMatcher[2:74]","start":1711616759648,"end":1711616759993,"title":"com\/api\/automation\/getrequest\/responseMatcher[2:74] 14:35:59.648-14:35:59.993 To get all the data from the application in JSON format using negate operator"},{"id":7,"group":5,"content":"com\/api\/automation\/getrequest\/responseMatcher[3:139]","start":1711616759908,"end":1711616760037,"title":"com\/api\/automation\/getrequest\/responseMatcher[3:139] 14:35:59.908-14:36:00.037 To get all the data from the application in JSON format for specific property","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

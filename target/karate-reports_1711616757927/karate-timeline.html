@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/deleterequest\/deleteUser[1:7]","start":1711615680700,"end":1711615682977,"title":"com\/api\/automation\/deleterequest\/deleteUser[1:7] 14:18:00.700-14:18:02.977 To delete the job entry from application using job id"},{"id":2,"group":1,"content":"com\/api\/automation\/deleterequest\/deleteUser[2:26]","start":1711615682984,"end":1711615684313,"title":"com\/api\/automation\/deleterequest\/deleteUser[2:26] 14:18:02.984-14:18:04.313 To delete the job entry from application using job id and delete the job entry twice  --- It should fail","className":"failed"},{"id":3,"group":1,"content":"com\/api\/automation\/deleterequest\/deleteUser[3:45]","start":1711615684325,"end":1711615685266,"title":"com\/api\/automation\/deleterequest\/deleteUser[3:45] 14:18:04.325-14:18:05.266 To demo request chaining","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

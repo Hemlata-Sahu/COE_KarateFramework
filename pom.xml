@@ -7,6 +7,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
  
+  <pluginRepositories><pluginRepository><id>{repo.${project.artifactId}</id><url>https://repo1.maven.org/maven2/com/intuit/karate/karate-apache/0.9.6/</url></pluginRepository></pluginRepositories>
+  
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>

@@ -21609,3 +21609,441 @@ classpath:com/api/automation/deleterequest/deleteUser.feature:45
 15:38:12.803 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 15 (13 remaining) classpath:com/api/automation/deleterequest/deleteUser.feature
 15:38:12.857 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 15 (12 remaining) classpath:com/api/automation/getrequest/getRequest.feature
 15:38:12.926 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 15 (10 remaining) classpath:com/api/automation/getrequest/responseMatcher.feature
+17:34:36.054 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:34:36.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:36.840 [main] INFO  com.intuit.karate - [print] ========This is the Background keyword ===================== 
+17:34:37.041 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:37.850 [main] DEBUG com.intuit.karate - response time in milliseconds: 805
+1 < 200
+1 < Date: Fri, 15 Nov 2024 12:04:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8e2f1ad7caad3b16-BOM
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=17960&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3110&recv_bytes=740&delivery_rate=180380&cwnd=251&unsent_bytes=0&cid=92e7d141003c4d83&ts=388&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+17:34:37.888 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:37.890 [main] INFO  com.intuit.karate - [print] ========This is the Background keyword ===================== 
+17:34:37.893 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:37.966 [main] DEBUG com.intuit.karate - response time in milliseconds: 73
+1 < 200
+1 < Date: Fri, 15 Nov 2024 12:04:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 0
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8e2f1ada7f7d3c4c-BOM
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=15954&sent=3&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1021&delivery_rate=78562&cwnd=248&unsent_bytes=0&cid=8696ed86c655fe07&ts=32&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+17:34:37.975 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:37.976 [main] INFO  com.intuit.karate - [print] ========This is the Background keyword ===================== 
+17:34:37.978 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept: application/xml*
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:38.041 [main] DEBUG com.intuit.karate - response time in milliseconds: 63
+1 < 200
+1 < Date: Fri, 15 Nov 2024 12:04:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1731317668&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=LACIJSX5MY3ZWcph8KSIULIw368UjiD6fWwRSveHXU0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1731317668&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=LACIJSX5MY3ZWcph8KSIULIw368UjiD6fWwRSveHXU0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1142
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8e2f1adafdb885ee-BOM
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=14581&sent=3&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1021&delivery_rate=90565&cwnd=219&unsent_bytes=0&cid=e32dc450b40cd4a2&ts=27&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+17:34:38.464 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:38.466 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:38.801 [main] DEBUG com.intuit.karate - response time in milliseconds: 334
+1 < 200
+1 < Date: Fri, 15 Nov 2024 12:04:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1731672278&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XFRr%2FXaRKKX8Snj0wfu0FaMs35LmS%2FEkWSE%2BfBX4uhE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1731672278&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XFRr%2FXaRKKX8Snj0wfu0FaMs35LmS%2FEkWSE%2BfBX4uhE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: MISS
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8e2f1ade0aa14055-BOM
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=15602&sent=4&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1021&delivery_rate=83975&cwnd=222&unsent_bytes=0&cid=df4c1434f8c0b2c4&ts=296&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+17:34:38.803 [main] INFO  com.intuit.karate - [print] {
+  "page": 1,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 1,
+      "name": "cerulean",
+      "year": 2000,
+      "color": "#98B2D1",
+      "pantone_value": "15-4020"
+    },
+    {
+      "id": 2,
+      "name": "fuchsia rose",
+      "year": 2001,
+      "color": "#C74375",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 3,
+      "name": "true red",
+      "year": 2002,
+      "color": "#BF1932",
+      "pantone_value": "19-1664"
+    },
+    {
+      "id": 4,
+      "name": "aqua sky",
+      "year": 2003,
+      "color": "#7BC4C4",
+      "pantone_value": "14-4811"
+    },
+    {
+      "id": 5,
+      "name": "tigerlily",
+      "year": 2004,
+      "color": "#E2583E",
+      "pantone_value": "17-1456"
+    },
+    {
+      "id": 6,
+      "name": "blue turquoise",
+      "year": 2005,
+      "color": "#53B0AE",
+      "pantone_value": "15-5217"
+    }
+  ],
+  "support": {
+    "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+    "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+  }
+}
+ 
+17:34:38.827 [main] ERROR com.intuit.karate - classpath:com/api/automation/getrequest/responseMatcher.feature:16
+And match response ==
+"""
+{ "page": 1,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+{
+  "id": 1,
+  "name": "cerulean",
+  "year": 2000,
+  "color": "#98B2D1",
+  "pantone_value": "15-4020"
+},
+{
+  "id": 2,
+  "name": "fuchsia rose",
+  "year": 2001,
+  "color": "#C74375",
+  "pantone_value": "17-2031"
+},
+{
+  "id": 3,
+  "name": "true red",
+  "year": 2002,
+  "color": "#BF1932",
+  "pantone_value": "19-1664"
+},
+{
+  "id": 4,
+  "name": "aqua sky",
+  "year": 2003,
+  "color": "#7BC4C4",
+  "pantone_value": "14-4811"
+},
+{
+  "id": 5,
+  "name": "tigerlily",
+  "year": 2004,
+  "color": "#E2583E",
+  "pantone_value": "17-1456"
+},
+{
+  "id": 6,
+  "name": "blue turquoise",
+  "year": 2005,
+  "color": "#53B0AE",
+  "pantone_value": "15-5217"
+}
+  ],
+  "support": {
+"url": "https://reqres.in/#support-heading",
+"text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+"""
+match failed: EQUALS
+  $ | not equal | match failed for name: 'support' (MAP:MAP)
+  {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+  {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+    $.support | not equal | match failed for name: 'url' (MAP:MAP)
+    {"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}
+    {"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}
+
+      $.support.url | not equal (STRING:STRING)
+      'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral'
+      'https://reqres.in/#support-heading'
+
+classpath:com/api/automation/getrequest/responseMatcher.feature:16
+17:34:38.843 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:38.844 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:38.939 [main] DEBUG com.intuit.karate - response time in milliseconds: 93
+1 < 200
+1 < Date: Fri, 15 Nov 2024 12:04:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8e2f1ae06c4b3a38-BOM
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=15384&sent=3&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1021&delivery_rate=83922&cwnd=226&unsent_bytes=0&cid=585771eecafb5d1f&ts=56&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+17:34:38.940 [main] INFO  com.intuit.karate - [print] {
+  "page": 1,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 1,
+      "name": "cerulean",
+      "year": 2000,
+      "color": "#98B2D1",
+      "pantone_value": "15-4020"
+    },
+    {
+      "id": 2,
+      "name": "fuchsia rose",
+      "year": 2001,
+      "color": "#C74375",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 3,
+      "name": "true red",
+      "year": 2002,
+      "color": "#BF1932",
+      "pantone_value": "19-1664"
+    },
+    {
+      "id": 4,
+      "name": "aqua sky",
+      "year": 2003,
+      "color": "#7BC4C4",
+      "pantone_value": "14-4811"
+    },
+    {
+      "id": 5,
+      "name": "tigerlily",
+      "year": 2004,
+      "color": "#E2583E",
+      "pantone_value": "17-1456"
+    },
+    {
+      "id": 6,
+      "name": "blue turquoise",
+      "year": 2005,
+      "color": "#53B0AE",
+      "pantone_value": "15-5217"
+    }
+  ],
+  "support": {
+    "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+    "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+  }
+}
+ 
+17:34:38.947 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:38.949 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:39.020 [main] DEBUG com.intuit.karate - response time in milliseconds: 71
+1 < 200
+1 < Date: Fri, 15 Nov 2024 12:04:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1731316934&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=MdlmWjeRjrJukmM4dIuRRFFHwNV9OSWxvdTl0Rn7MkE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8e2f1ae10a463a8d-BOM
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=15536&sent=3&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1021&delivery_rate=79581&cwnd=220&unsent_bytes=0&cid=71446333ace1bcb9&ts=34&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+17:34:39.021 [main] INFO  com.intuit.karate - [print] {
+  "page": 1,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 1,
+      "name": "cerulean",
+      "year": 2000,
+      "color": "#98B2D1",
+      "pantone_value": "15-4020"
+    },
+    {
+      "id": 2,
+      "name": "fuchsia rose",
+      "year": 2001,
+      "color": "#C74375",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 3,
+      "name": "true red",
+      "year": 2002,
+      "color": "#BF1932",
+      "pantone_value": "19-1664"
+    },
+    {
+      "id": 4,
+      "name": "aqua sky",
+      "year": 2003,
+      "color": "#7BC4C4",
+      "pantone_value": "14-4811"
+    },
+    {
+      "id": 5,
+      "name": "tigerlily",
+      "year": 2004,
+      "color": "#E2583E",
+      "pantone_value": "17-1456"
+    },
+    {
+      "id": 6,
+      "name": "blue turquoise",
+      "year": 2005,
+      "color": "#53B0AE",
+      "pantone_value": "15-5217"
+    }
+  ],
+  "support": {
+    "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+    "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+  }
+}
+ 
+17:34:39.023 [main] ERROR com.intuit.karate - classpath:com/api/automation/getrequest/responseMatcher.feature:146
+And match response contains deep {"text": "To keep ReqRes free, contributions towards server costs are appreciated!" }
+match failed: CONTAINS_DEEP
+  $ | actual does not contain expected | actual does not contain key - 'text' (MAP:MAP)
+  {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+  {"text":"To keep ReqRes free, contributions towards server costs are appreciated!"}
+
+
+classpath:com/api/automation/getrequest/responseMatcher.feature:146

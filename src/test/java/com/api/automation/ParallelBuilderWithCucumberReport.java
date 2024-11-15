@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.*;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,6 +16,7 @@ import com.intuit.karate.Runner.Builder;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
+
 public class ParallelBuilderWithCucumberReport {
 	
 	@Test
@@ -24,9 +26,9 @@ public class ParallelBuilderWithCucumberReport {
 		aRunner.path("classpath:com/api/automation");
 		// aRunner.parallel(5);
 		Results result = aRunner.parallel(5);
-		System.out.println("Total Feature => " + result.getFeatureCount());
-		System.out.println("Total Scenarios => " + result.getScenarioCount());
-		System.out.println("Passed Scenarios => " + result.getPassCount());
+		System.out.println("Total Feature => " + result.getFeaturesTotal());
+		System.out.println("Total Scenarios => " + result.getScenariosTotal());
+		System.out.println("Passed Scenarios => " + result.getScenariosPassed());
 		//reportDirLocation --> C:/Users/hemlata.sahu/eclipse-workspace/karateframework/target/karate-reports
 		generateCucumberReport(result.getReportDir());
 		Assertions.assertEquals(0, result.getFailCount(), "There are Some Failed Scenarios ");

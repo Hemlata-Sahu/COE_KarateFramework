@@ -17,9 +17,9 @@ public class ParallelBuilder {
 		
 		aRunner.path("classpath:com/api/automation");
 		Results result = aRunner.parallel(5);
-		System.out.println("Total Feature => " + result.getFeatureCount());
-		System.out.println("Total Scenarios => " + result.getScenarioCount());
-		System.out.println("Passed Scenarios => " + result.getPassCount());
+		System.out.println("Total Feature => " + result.getFeaturesTotal());
+		System.out.println("Total Scenarios => " + result.getScenariosTotal());
+		System.out.println("Passed Scenarios => " + result.getScenariosPassed());
 		
 		Assertions.assertEquals(0, result.getFailCount(), "There are Some Failed Scenarios "); 
 		
